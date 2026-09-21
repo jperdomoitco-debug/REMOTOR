@@ -49,8 +49,8 @@ Se desea que el proceso de creación de recepción de vehículos funcione de man
 3. **Selector de flujo (Orden externa):** El formulario incluye un checkbox **"¿Ingresa con orden externa?"**.
    - Si se marca **SÍ**: se despliega un campo para cargar el documento de la orden (archivo, foto o cámara). Si el asesor no tiene el documento a la mano, puede guardar y notificar a coordinación, que cargará la orden posteriormente.
    - Si se marca **NO**: no se despliega campo de carga; el sistema permite guardar la recepción con la alerta *"Recepción creada - Sin OT vinculada"* y notifica a coordinación para gestionar la OTi.
-4. **Validación de kilometraje en tiempo real:** El kilometraje debe ser un número entero estrictamente mayor o igual al último registro histórico. Si es menor, negativo o decimal, se muestra una alerta emergente (popup) bloqueante con el último kilometraje registrado.
-5. **Vehículo no registrado:** Si la placa o sigla no existe en la base de datos, el sistema permite registrar los datos básicos disponibles, muestra la alerta *"Vehículo no registrado. Solicite la carga a Administración"*, notifica a coordinación y deja el vehículo bloqueado para operación hasta su validación.
+4. **Validación de kilometraje en tiempo real (Requerido):** El kilometraje debe ser un número entero estrictamente mayor o igual al último registro histórico. Si es menor, negativo o decimal, se muestra una alerta emergente con el último kilometraje registrado.
+5. **Vehículo no registrado:** Si la placa o sigla no existe en la base de datos, el sistema permite registrar los datos básicos disponibles, muestra la alerta *"Vehículo no registrado. Solicite la carga a Administración"*, notifica a coordinación y deja el vehículo inhabilitado para operación para operación hasta su validación.
 6. **Notificaciones multicanal:** Al guardar la recepción, se notifica simultáneamente al coordinador administrativo y al jefe de taller por correo (con el PDF de la recepción adjunto), WhatsApp y alerta visual en la campanita del panel.
 7. **Inmutabilidad:** Una recepción aprobada por coordinación queda inmutable y no puede editarse ni volver a aprobarse.
 
@@ -85,7 +85,7 @@ Entonces el sistema permite guardar con la alerta "Recepción creada - Sin OT vi
 
 Dado que el Asesor ingresa un kilometraje menor al último registrado históricamente
 Cuando avanza al siguiente campo
-Entonces el sistema muestra una alerta emergente bloqueante indicando el último kilometraje registrado.
+Entonces el sistema muestra una alerta emergente indicando el último kilometraje registrado.
 
 **Escenario 5: Validar kilometraje inválido (excepción)**
 

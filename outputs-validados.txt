@@ -1,2 +1,8 @@
-1. Consultar_diagnosticos.md Listo
-2. 
+1. Consultar_diagnosticos Listo
+2. Consultar_recepciones.md Listo
+3. Creacion_recepcion_vehiculo.md Listo
+4. Gestion_orden_trabajo Listo
+5. Aprobar_recepciones_v2 Listo
+6. Cambio_sucursal_orden_trabajo_v2 Listo
+7. Solicitud_cotizacion.md listo
+8. Consulta_oferta_economica.md

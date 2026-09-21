@@ -38,7 +38,7 @@ Implementar un proceso estandarizado y digital para la solicitud y gestión de c
 ### Especificación Técnica de Comportamiento
 
 1. **Formulario vinculado a la OTi:** La solicitud de cotización se genera desde un formulario asociado a la orden de trabajo.
-2. **Autocompletado:** Al abrir el formulario, se precargan la entidad, la placa y los repuestos a cotizar desde la OTi y el diagnóstico, aplicando la homologación de términos entre taller y entidad.
+2. **Autocompletado:** Al abrir el formulario, se precargan la entidad, la placa y los repuestos a cotizar desde la OTi y el diagnóstico.
 3. **Envío al almacenista:** La solicitud se envía con la información completa (entidad, placa y repuestos a cotizar) para que el almacenista realice una cotización efectiva.
 4. **Trazabilidad de estados:** Cada solicitud registra su estado (pendiente, en proceso, respondida) y queda enlazada a la OTi.
 5. **Notificación multicanal:** Al enviar la solicitud, se notifica al almacenista por correo, WhatsApp y alerta visual en la campanita.
@@ -106,16 +106,18 @@ Entonces el sistema alimenta la propuesta comercial con los repuestos y cantidad
 
 **[ADDED]**
 - Formulario digital de solicitud vinculado a la OTi.
-- Autocompletado de entidad, placa y repuestos desde la OTi y el diagnóstico (con homologación de términos).
+- Autocompletado de entidad, placa y repuestos desde la OTi y el diagnóstico.
 - Trazabilidad de estados de la solicitud (pendiente, en proceso, respondida).
 - Notificación multicanal al almacenista (correo, WhatsApp, campanita).
 - Bloqueo de solicitudes para trabajos realizados por terceros.
 - Resaltado en amarillo de ítems fuera de oferta y alimentación de la propuesta comercial.
 
 **[MODIFIED]**
+
 - Canal de solicitud: de comunicación verbal o notas informales a registro digital centralizado.
 - Información requerida: se garantiza entidad, placa y repuestos desde el primer contacto.
 
 **[REMOVED]**
+
 - Solicitudes verbales y notas informales sin trazabilidad.
 - Historia duplicada "Aprobar recepción" (HU_002) que aparecía en el control de cambios original y corresponde a otro proceso.
