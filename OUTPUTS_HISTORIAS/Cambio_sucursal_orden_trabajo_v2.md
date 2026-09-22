@@ -44,7 +44,7 @@ Se debe permitir la asignación y actualización de la sucursal de atención en 
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (1 clic):** un clic abre el detalle de la OTi con su sucursal y satélite actuales.
+**1.** **Navegación simplificada:** un clic abre el detalle de la OTi con su sucursal y satélite actuales.
 **2.** **Autocompletado:** sucursal y satélite precargados desde la recepción, en solo lectura.
 **3.** **Confirmación en tiempo real:** la carga de la sucursal y del historial es asíncrona, sin recargar la pantalla.
 
@@ -106,7 +106,7 @@ Se debe permitir la asignación y actualización de la sucursal de atención en 
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** seleccionar la nueva sucursal/satélite desde una lista desplegable, registrar el motivo y confirmar.
+**1.** **Navegación simplificada:** seleccionar la nueva sucursal/satélite desde una lista desplegable, registrar el motivo y confirmar.
 **2.** **Autocompletado:** la sucursal actual se precarga y las sucursales/satélites disponibles se presentan en una lista desplegable.
 **3.** **Confirmación en tiempo real:** el cambio y el registro en el historial se confirman sin recargar la pantalla.
 

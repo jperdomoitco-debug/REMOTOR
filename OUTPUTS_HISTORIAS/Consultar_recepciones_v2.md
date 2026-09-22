@@ -47,7 +47,7 @@ Se desea que el coordinador administrativo pueda consultar las recepciones de lo
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** un clic abre el detalle desde el listado o desde la notificación, sin salir del formulario maestro.
+**1.** **Navegación simplificada:** un clic abre el detalle desde el listado o desde la notificación, sin salir del formulario maestro.
 **2.** **Autocompletado y precarga:** el listado y el detalle se precargan con los datos capturados en la recepción, en modo solo lectura.
 **3.** **Confirmaciones en tiempo real:** la búsqueda por placa/sigla y los filtros se ejecutan de forma asíncrona, sin recargar la pantalla.
 **4.** **Filtros en línea:** permite filtrar por estado, fecha y placa sin recargar.
@@ -142,7 +142,7 @@ Y existen recepciones registradas en el sistema
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** validar y aprobar desde el detalle de la recepción con un solo clic; la OTi se genera automáticamente sin pasos manuales.
+**1.** **Navegación simplificada:** validar y aprobar desde el detalle de la recepción con un solo clic; la OTi se genera automáticamente sin pasos manuales.
 **2.** **Autocompletado:** el encabezado de la OTi se precarga con los datos de la recepción (placa, entidad, kilometraje, fecha, corte).
 **3.** **Confirmaciones en tiempo real:** al aprobar, el sistema confirma la creación de la OTi y el cambio de estado sin recargar la pantalla.
 

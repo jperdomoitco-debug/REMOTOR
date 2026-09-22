@@ -47,7 +47,7 @@ Implementar un proceso estandarizado y digital para la solicitud y gestión de c
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** seleccionar los repuestos precargados y enviar; la solicitud se genera sin reescribir datos.
+**1.** **Navegación simplificada:** seleccionar los repuestos precargados y enviar; la solicitud se genera sin reescribir datos.
 **2.** **Autocompletado:** entidad, placa y repuestos se precargan desde la OTi y el diagnóstico.
 **3.** **Confirmación en tiempo real:** el envío y el cambio de estado se confirman sin recargar la pantalla.
 

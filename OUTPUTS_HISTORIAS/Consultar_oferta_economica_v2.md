@@ -45,7 +45,7 @@ Centralizar la Oferta Económica en una solución digital tipo formulario con co
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** seleccionar contrato o digitar placa/sigla → ver procedimientos y precios.
+**1.** **Navegación simplificada:** seleccionar contrato o digitar placa/sigla → ver procedimientos y precios.
 **2.** **Autocompletado:** el contrato aplicable se precarga al ingresar la placa o sigla.
 **3.** **Confirmación en tiempo real:** la carga de procedimientos y precios es asíncrona, sin recargar la pantalla.
 
@@ -166,7 +166,7 @@ Centralizar la Oferta Económica en una solución digital tipo formulario con co
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 1 clic):** digitar placa/sigla y ver la ficha del vehículo y sus contratos.
+**1.** **Navegación simplificada:** digitar placa/sigla y ver la ficha del vehículo y sus contratos.
 **2.** **Autocompletado:** sugerencias de placa/sigla mientras se escribe.
 **3.** **Confirmación en tiempo real:** la búsqueda y el refinamiento se ejecutan de forma asíncrona.
 

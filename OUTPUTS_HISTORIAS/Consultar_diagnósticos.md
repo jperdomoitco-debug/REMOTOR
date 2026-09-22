@@ -51,7 +51,7 @@ Se desea que los diagnósticos asociados a una **Orden de Trabajo interna (OTi)*
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (2 clics):** Desde la OTi, un clic abre el listado de diagnósticos y un segundo clic expande el detalle, sin recargar ni salir de la pantalla.
+**1.** **Navegación simplificada:** Desde la OTi, un clic abre el listado de diagnósticos y un segundo clic expande el detalle, sin recargar ni salir de la pantalla.
 **2.** **Autocompletado y precarga:** La cabecera de la OTi se precarga con placa, entidad, contrato, corte y estado; cada diagnóstico muestra fecha, hora, técnico y estado precargados en solo lectura.
 **3.** **Confirmaciones en tiempo real:** La carga del listado y del detalle es asíncrona (sin recarga de pantalla), con indicador de progreso mientras se consultan los datos.
 **4.** **Filtros en línea:** El listado permite filtrar/ordenar por estado, fecha y técnico sin recargar la pantalla.

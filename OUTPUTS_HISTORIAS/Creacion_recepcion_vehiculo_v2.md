@@ -55,7 +55,7 @@ Se desea que el proceso de creación de recepción de vehículos funcione de man
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 3 clics):** digitar placa/sigla y confirmar → autocompleta los datos; cargar evidencia (si aplica) → guardar. El flujo principal no supera tres clics.
+**1.** **Navegación simplificada:** digitar placa/sigla y confirmar → autocompleta los datos; cargar evidencia (si aplica) → guardar. El flujo principal no supera tres clics.
 **2.** **Autocompletado y precarga:** Entidad, Marca, Clase, Modelo, Color y último kilometraje se precargan en solo lectura.
 **3.** **Confirmaciones en tiempo real:** la búsqueda del vehículo y la validación del kilometraje se ejecutan de forma asíncrona, sin recargar la pantalla.
 **4.** **Firma interna automática:** la firma del asesor se toma del perfil autenticado, sin botón de firma manual.

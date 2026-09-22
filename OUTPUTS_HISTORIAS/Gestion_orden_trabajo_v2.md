@@ -120,7 +120,7 @@ Se desea que la creación de las órdenes de trabajo se realice a partir de una 
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (1 clic):** botón "Enviar a aprobación" desde la OTi.
+**1.** **Navegación simplificada:** botón "Enviar a aprobación" desde la OTi.
 **2.** **Previsualización:** la OTi se muestra lista para revisar antes de enviar.
 **3.** **Confirmación en tiempo real:** el envío y el registro de la evidencia se confirman sin recargar la pantalla.
 
@@ -267,7 +267,7 @@ Se desea que la creación de las órdenes de trabajo se realice a partir de una 
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (1 clic):** un clic abre el detalle de la OTi desde el listado.
+**1.** **Navegación simplificada:** un clic abre el detalle de la OTi desde el listado.
 **2.** **Autocompletado y precarga:** el listado se precarga con placa, entidad, fecha, estado y consecutivo.
 **3.** **Confirmación en tiempo real:** búsqueda y filtros asíncronos, sin recargar la pantalla.
 
@@ -338,7 +338,7 @@ Y existen OTi registradas
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (1 clic):** un clic despliega el historial desde la OTi.
+**1.** **Navegación simplificada:** un clic despliega el historial desde la OTi.
 **2.** **Autocompletado y precarga:** los registros del historial se precargan con fecha, resultado e ítems.
 **3.** **Confirmación en tiempo real:** la carga del historial es asíncrona, sin recargar la pantalla.
 

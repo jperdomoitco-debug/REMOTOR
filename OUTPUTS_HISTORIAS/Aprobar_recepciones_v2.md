@@ -44,7 +44,7 @@ Implementar una aprobación ágil y centralizada que permite al coordinador admi
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (≤ 2 clics):** validar y aprobar desde el detalle de la recepción con un solo clic.
+**1.** **Navegación simplificada:** validar y aprobar desde el detalle de la recepción con un solo clic.
 **2.** **Confirmaciones en tiempo real:** al aprobar, el sistema confirma la aprobación de la recepción y el cambio de estado sin recargar la pantalla.
 
 ### Criterios de Aceptación
