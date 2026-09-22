@@ -10,8 +10,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Solicitar cotización. |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: solicitud digital vinculada a la OTi con autocompletado de entidad, placa y repuestos, trazabilidad de estados y notificación al almacenista |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Vincular una solicitud digital a la OTi permitiendo el autocompletado de la entidad, la placa y los repuestos, asegurar la trazabilidad de los estados y automatizar la notificación al almacenista. |  |  |  |
 
 ## Situación Actual
 
@@ -52,7 +51,7 @@ Implementar un proceso estandarizado y digital para la solicitud y gestión de c
 2. **Autocompletado:** entidad, placa y repuestos se precargan desde la OTi y el diagnóstico.
 3. **Confirmación en tiempo real:** el envío y el cambio de estado se confirman sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Crear la solicitud con datos precargados (caso feliz)**
 

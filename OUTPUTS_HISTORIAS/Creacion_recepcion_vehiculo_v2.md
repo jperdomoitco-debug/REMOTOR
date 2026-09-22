@@ -12,8 +12,7 @@
 | **Prioridad** |  | Alta | x | Media |  |  | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 07-06-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Se requiere la creación ágil de recepciones y notificación de creación de las mismas al área administrativa |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: autocompletado por placa/sigla, flujo con/sin orden externa, validación de kilometraje, notificaciones multicanal, formatos e inventario por entidad y firmas digitales |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Realizar la creación de recepciones de los vehículos, realizando un diligenciamiento inicial del documento de recepción, posteriormente que la nueva recepción sea notificada al área administrativa |  |  |  |
 
 ## Situación Actual
 
@@ -61,7 +60,7 @@ Se desea que el proceso de creación de recepción de vehículos funcione de man
 3. **Confirmaciones en tiempo real:** la búsqueda del vehículo y la validación del kilometraje se ejecutan de forma asíncrona, sin recargar la pantalla.
 4. **Firma interna automática:** la firma del asesor se toma del perfil autenticado, sin botón de firma manual.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Autocompletar los datos del vehículo por placa o sigla (caso feliz)**
 
@@ -172,7 +171,7 @@ Entonces el sistema bloquea la edición y la recepción queda inmutable.
 2. **Checkboxes precargados:** la lista de chequeo se muestra lista para marcar, según la configuración de la entidad.
 3. **Confirmación en tiempo real:** al marcar daños en el esquema 2D, el registro se guarda en el momento sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Desplegar el formato e inventario de la entidad (caso feliz)**
 
@@ -258,7 +257,7 @@ Entonces el sistema no lo permite, porque solo la administración puede configur
 2. **Un solo lienzo para el conductor:** la firma del responsable se captura en un único espacio en pantalla.
 3. **Confirmación en tiempo real:** la firma capturada se muestra inmediatamente en el formulario sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Firma obligatoria del conductor en el ingreso (caso feliz)**
 

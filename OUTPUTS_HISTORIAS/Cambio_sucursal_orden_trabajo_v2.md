@@ -11,8 +11,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Traslado del vehículo entre sedes y actualización de la OT. |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: consulta de la sucursal/satélite actual, cambio documentado con historial de traslados, herencia desde la recepción y notificación a la sede destino |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Consultar la sucursal o el satélite actual, registrar cada cambio documentado con su respectivo historial de traslados, heredar los datos desde la recepción y notificar de manera automática a la sede de destino. |  |  |  |
 
 ## Situación Actual
 
@@ -49,7 +48,7 @@ Se debe permitir la asignación y actualización de la sucursal de atención en 
 2. **Autocompletado:** sucursal y satélite precargados desde la recepción, en solo lectura.
 3. **Confirmación en tiempo real:** la carga de la sucursal y del historial es asíncrona, sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Consultar la sucursal y el satélite actuales (caso feliz)**
 
@@ -111,7 +110,7 @@ Entonces el sistema muestra el estado vacío "Sin sucursal de atención asignada
 2. **Autocompletado:** la sucursal actual se precarga y las sucursales/satélites disponibles se presentan en una lista desplegable.
 3. **Confirmación en tiempo real:** el cambio y el registro en el historial se confirman sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Cambiar la sucursal registrando el motivo (caso feliz)**
 

@@ -11,8 +11,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Consultar recepciones de los vehículos que ingresan. |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: consulta y aprobación de recepciones con búsqueda por placa/sigla, creación automática de la OTi con encabezado precargado, estados según orden externa y notificaciones |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Consultar y aprobar recepciones mediante la búsqueda por placa o sigla, generar de forma automática la OTi con el encabezado precargado, gestionar los estados según la existencia de la orden externa y disparar las notificaciones correspondientes. |  |  |  |
 
 ## Situación Actual
 
@@ -38,7 +37,7 @@ Se desea que el coordinador administrativo pueda consultar las recepciones de lo
 
 ### Especificación Técnica de Comportamiento
 
-1. **Formulario maestro:** El sistema muestra una tabla de recepciones con placa/sigla, entidad, fecha y hora de ingreso, kilometraje y estado.
+1. **Listado de Recepciones:** El sistema muestra una tabla de recepciones con placa/sigla, entidad, fecha y hora de ingreso, kilometraje y estado.
 2. **Búsqueda estricta:** La búsqueda se realiza estrictamente por **placa o sigla**; no se admite búsqueda por entidad ni por contrato para evitar listas masivas.
 3. **Detalle en solo lectura:** Al seleccionar una recepción, el sistema despliega el detalle completo: entidad, marca, clase, modelo, color, kilometraje, descripción de la falla, observaciones, inventario, daños de carrocería y la evidencia de la orden externa si aplica.
 4. **Contratos informativos:** El contrato asociado se muestra como dato de solo lectura, sin usarse como filtro de búsqueda.
@@ -53,7 +52,7 @@ Se desea que el coordinador administrativo pueda consultar las recepciones de lo
 3. **Confirmaciones en tiempo real:** la búsqueda por placa/sigla y los filtros se ejecutan de forma asíncrona, sin recargar la pantalla.
 4. **Filtros en línea:** permite filtrar por estado, fecha y placa sin recargar.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Visualizar el listado de recepciones (caso feliz)**
 
@@ -147,7 +146,7 @@ Entonces el sistema muestra únicamente las recepciones con ese estado, sin reca
 2. **Autocompletado:** el encabezado de la OTi se precarga con los datos de la recepción (placa, entidad, kilometraje, fecha, corte).
 3. **Confirmaciones en tiempo real:** al aprobar, el sistema confirma la creación de la OTi y el cambio de estado sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Aprobar la recepción y crear la OTi (caso feliz)**
 

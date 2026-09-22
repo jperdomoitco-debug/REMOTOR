@@ -12,8 +12,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Consultar y filtrar la oferta económica, vehículos y procedimientos desde el sistema |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: oferta económica centralizada con búsqueda por contrato y placa/sigla, filtros dinámicos, precios con/sin IVA y trazabilidad de contratos activos y terminados |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Centralizar la oferta económica facilitando la búsqueda por contrato y placa o sigla, aplicar filtros dinámicos, gestionar precios con o sin IVA y asegurar la trazabilidad completa de los contratos tanto activos como terminados. |  |  |  |
 
 ## Situación Actual
 
@@ -50,7 +49,7 @@ Centralizar la Oferta Económica en una solución digital tipo formulario con co
 2. **Autocompletado:** el contrato aplicable se precarga al ingresar la placa o sigla.
 3. **Confirmación en tiempo real:** la carga de procedimientos y precios es asíncrona, sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Consultar la oferta económica por contrato (caso feliz)**
 
@@ -114,7 +113,7 @@ Entonces muestra el estado vacío "No hay oferta económica cargada para este co
 2. **Autocompletado:** sugerencias de procedimientos a medida que se escribe.
 3. **Confirmación en tiempo real:** el filtrado se ejecuta de forma asíncrona.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Filtrar por palabra clave (caso feliz)**
 
@@ -171,7 +170,7 @@ Entonces muestra el estado vacío "No se encontraron procedimientos".
 2. **Autocompletado:** sugerencias de placa/sigla mientras se escribe.
 3. **Confirmación en tiempo real:** la búsqueda y el refinamiento se ejecutan de forma asíncrona.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Consultar un vehículo por placa o sigla (caso feliz)**
 

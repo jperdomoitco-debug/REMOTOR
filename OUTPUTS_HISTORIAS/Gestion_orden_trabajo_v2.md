@@ -14,8 +14,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Crear la orden de trabajo al momento de que se registre la recepción de un vehículo |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: OTi obligatoria con encabezado heredado de la recepción, flujo de aprobación con trazabilidad, actualización por hallazgos con protocolo de pausa y consultas de trazabilidad |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Generar obligatoriamente la OTi heredando el encabezado de la recepción, gestionar el flujo de aprobación con trazabilidad completa, actualizar los registros por hallazgos aplicando un protocolo de pausa y realizar consultas precisas de trazabilidad. |  |  |  |
 
 ## Situación Actual
 
@@ -54,7 +53,7 @@ Se desea que la creación de las órdenes de trabajo se realice a partir de una 
 2. **Autocompletado:** el encabezado de la OTi se precarga con los datos de la recepción.
 3. **Confirmación en tiempo real:** el sistema confirma la creación de la OTi y su estado inicial sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Crear la OTi manualmente vinculada a una recepción (caso feliz)**
 
@@ -125,7 +124,7 @@ Entonces asigna un consecutivo único global, sin numeraciones independientes po
 2. **Previsualización:** la OTi se muestra lista para revisar antes de enviar.
 3. **Confirmación en tiempo real:** el envío y el registro de la evidencia se confirman sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Enviar la solicitud de aprobación (caso feliz)**
 
@@ -200,7 +199,7 @@ Entonces el sistema identifica y muestra los ítems OK y los ítems NO de la apr
 2. **Marca visual:** los ítems fuera de oferta se resaltan en amarillo para su identificación inmediata.
 3. **Confirmación en tiempo real:** la actualización de la OTi y el cambio de estado se confirman sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Marcar ítems fuera de la oferta (caso feliz)**
 
@@ -272,7 +271,7 @@ Entonces la OTi pasa a "Autorizado/En ejecución" y notifica al jefe de taller p
 2. **Autocompletado y precarga:** el listado se precarga con placa, entidad, fecha, estado y consecutivo.
 3. **Confirmación en tiempo real:** búsqueda y filtros asíncronos, sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Listar todas las órdenes de trabajo (caso feliz)**
 
@@ -343,7 +342,7 @@ Entonces el sistema muestra el estado vacío "No se encontraron órdenes de trab
 2. **Autocompletado y precarga:** los registros del historial se precargan con fecha, resultado e ítems.
 3. **Confirmación en tiempo real:** la carga del historial es asíncrona, sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Consultar el historial de aprobaciones (caso feliz)**
 

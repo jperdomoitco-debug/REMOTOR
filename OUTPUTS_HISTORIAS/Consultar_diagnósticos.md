@@ -10,8 +10,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| 1.0 | 04-07-2026 | Julián Perdomo |  |  | Luis Miguel Gonzáles |  |  | Consultar diagnósticos que están en ejecución en una orden de trabajo |  |  |  |
-| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Transformación a versión 2.0: visualización de N diagnósticos desde la OTi con trazabilidad, multimedia (audio y transcripción) e identificación de ítems fuera de oferta |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Visualizar múltiples diagnósticos desde la OTi manteniendo la trazabilidad, integrar contenido multimedia con audio y su respectiva transcripción, e identificar con precisión los ítems que se encuentran fuera de oferta. |  |  |  |
 
 ## Situación Actual
 
@@ -57,7 +56,7 @@ Se desea que los diagnósticos asociados a una **Orden de Trabajo interna (OTi)*
 3. **Confirmaciones en tiempo real:** La carga del listado y del detalle es asíncrona (sin recarga de pantalla), con indicador de progreso mientras se consultan los datos.
 4. **Filtros en línea:** El listado permite filtrar/ordenar por estado, fecha y técnico sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Consultar el listado de diagnósticos desde la OTi (caso feliz)**
 

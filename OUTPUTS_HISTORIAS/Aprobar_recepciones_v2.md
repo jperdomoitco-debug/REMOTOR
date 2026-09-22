@@ -4,16 +4,23 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Control de cambios a:** |  |  |  |  |  |  |  |  |  |  |  |
 | **Historia de usuario:** |  |  |  |  |  |  |  |  |  |  |  |
-| HU_002 |  | Aprobar la recepción |  |  |  |  |  |  |  |  |  |
+| HU_001 |  | Aprobar la recepción |  |  |  |  |  |  |  |  |  |
 | **Rol(es) "Yo como"** |  | Coordinador administrativo |  |  |  |  |  |  |  |  |  |
 | **Funcionalidad "Quiero"** |  | Aprobar la recepción validada |  |  |  |  |  |  |  |  |  |
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |  |
 
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | 21-09-2026 | Julián Perdomo |  |  |  |  |  | Aprobar una recepción previamente validada y habilitar la continuidad del proceso |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Vincular una solicitud digital a la OTi permitiendo el autocompletado de la entidad, la placa y los repuestos, asegurar la trazabilidad de los estados y automatizar la notificación al almacenista. |  |  |  |
 
-## HU_002 — Aprobar la recepción
+## Situación Actual
+
+Actualmente, el proceso operativo enfrenta diversas deficiencias que van desde validaciones administrativas manuales y dispersas que retrasan la confirmación de recepciones, hasta la falta de visibilidad y directrices claras cuando faltan documentos externos indispensables como la OTe. Asimismo, la comunicación informal con el jefe de taller mediante llamadas o chats genera retrasos innecesarios, problemática que se ve agravada por la ausencia de bloqueos de inmutabilidad en los registros aprobados, lo cual vulnera la trazabilidad exacta y expone los datos a modificaciones indebidas.
+
+## Situación Deseada
+
+Implementar una aprobación ágil y centralizada que permite al coordinador administrativo validar los registros en máximo dos clics de forma inmediata, complementada con un control inteligente de documentos que gestiona escenarios con o sin orden externa y bloquea la aprobación mediante un indicador explícito si falta el archivo requerido. Asimismo, automatiza las notificaciones para alertar al jefe de taller vía PUSH o WhatsApp tan pronto se habilita un vehículo para diagnóstico, y garantiza una trazabilidad total y seguridad mediante registros inmutables de solo lectura respaldados por un log automático con fecha, hora y usuario exacto.
+
+## HU_001 — Aprobar la recepción
 
 **Como** Coordinador administrativo,
 **Quiero** aprobar la recepción validada,
@@ -40,7 +47,7 @@
 1. **Mínimo de clics (≤ 2 clics):** validar y aprobar desde el detalle de la recepción con un solo clic.
 2. **Confirmaciones en tiempo real:** al aprobar, el sistema confirma la aprobación de la recepción y el cambio de estado sin recargar la pantalla.
 
-### Criterios de Aceptación (Gherkin BDD)
+### Criterios de Aceptación
 
 **Escenario 1: Aprobar la recepción (caso feliz)**
 
