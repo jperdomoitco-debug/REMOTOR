@@ -35,11 +35,9 @@ Implementar una aprobación ágil y centralizada que permite al coordinador admi
 ### Especificación Técnica de Comportamiento
 
 **1.** **Aprobación:** Al pulsar "Aprobar", el sistema confirma la aprobación de la recepción y cambia su estado a aprobado.
-
 **2.** **Caso A (con OTe):** Si la recepción tiene orden externa cargada, el coordinador revisa el PDF/foto, valida la orden y aprueba la recepción; el proceso continúa con la información de la orden externa disponible.
 **3.** **Caso B (sin OTe):** Si la recepción no tiene orden externa, el coordinador aprueba la recepción y el proceso continúa sin orden externa cargada.
 **4.** **Notificación de habilitación:** Al aprobar, el sistema dispara una notificación (PUSH/WhatsApp) al jefe de taller: *"Vehículo [Placa/Sigla] habilitado para diagnóstico"*.
-
 **5.** **Carga de orden pendiente:** Si la recepción indica "con orden externa" pero no trae documento cargado, el sistema muestra el indicador "cargar orden" y permite cargar el documento antes de aprobar.
 **6.** **Inmutabilidad:** Una recepción aprobada queda inmutable y no puede editarse ni volver a aprobarse.
 **7.** **Trazabilidad:** Se registra log con fecha, hora y usuario que aprobó la recepción.
