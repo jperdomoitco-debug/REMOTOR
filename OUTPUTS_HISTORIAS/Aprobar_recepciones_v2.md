@@ -10,7 +10,7 @@
 | **Prioridad** |  | Alta |  | Media | x | Baja |  |  | **Módulo / Aplicación** | servicio |  |
 
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
-| **2.**0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Vincular una solicitud digital a la OTi permitiendo el autocompletado de la entidad, la placa y los repuestos, asegurar la trazabilidad de los estados y automatizar la notificación al almacenista. |  |  |  |
+| 2.0 | 20-09-2026 | Julián Perdomo |  |  | Diana Rosero |  |  | Vincular una solicitud digital a la OTi permitiendo el autocompletado de la entidad, la placa y los repuestos, asegurar la trazabilidad de los estados y automatizar la notificación al almacenista. |  |  |  |
 
 ## Situación Actual
 
