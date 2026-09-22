@@ -30,76 +30,76 @@ Implementar un proceso estandarizado y digital para la solicitud y gestión de c
 
 ### Precondiciones
 
-1. El usuario debe tener una sesión activa con el rol de **Coordinador administrativo**.
-2. Debe existir una OTi vinculada con el diagnóstico y los repuestos a cotizar.
-3. El trabajo debe ser realizado por **personal técnico interno** (regla de negocio: no aplica cuando el trabajo lo ejecuta un tercero).
+**1.** El usuario debe tener una sesión activa con el rol de **Coordinador administrativo**.
+**2.** Debe existir una OTi vinculada con el diagnóstico y los repuestos a cotizar.
+**3.** El trabajo debe ser realizado por **personal técnico interno** (regla de negocio: no aplica **Cuando** el trabajo lo ejecuta un tercero).
 
 ### Especificación Técnica de Comportamiento
 
-1. **Formulario vinculado a la OTi:** La solicitud de cotización se genera desde un formulario asociado a la orden de trabajo.
-2. **Autocompletado:** Al abrir el formulario, se precargan la entidad, la placa y los repuestos a cotizar desde la OTi y el diagnóstico.
-3. **Envío al almacenista:** La solicitud se envía con la información completa (entidad, placa y repuestos a cotizar) para que el almacenista realice una cotización efectiva.
-4. **Trazabilidad de estados:** Cada solicitud registra su estado (pendiente, en proceso, respondida) y queda enlazada a la OTi.
-5. **Notificación multicanal:** Al enviar la solicitud, se notifica al almacenista por correo, WhatsApp y alerta visual en la campanita.
-6. **Regla de negocio:** Las solicitudes de cotización solo se desencadenan cuando el trabajo es realizado por personal técnico interno; si el trabajo lo realiza un tercero, el sistema bloquea la solicitud.
-7. **Ítems fuera de oferta:** Los repuestos fuera de la oferta económica o del contrato se resaltan en amarillo para su cotización o adición a la OTe.
-8. **Alimentación de la propuesta comercial:** La cotización registrada alimenta la propuesta comercial/cotización que se envía a la entidad.
+**1.** **Formulario vinculado a la OTi:** La solicitud de cotización se genera desde un formulario asociado a la orden de trabajo.
+**2.** **Autocompletado:** Al abrir el formulario, se precargan la entidad, la placa y los repuestos a cotizar desde la OTi y el diagnóstico.
+**3.** **Envío al almacenista:** La solicitud se envía con la información completa (entidad, placa y repuestos a cotizar) para que el almacenista realice una cotización efectiva.
+**4.** **Trazabilidad de estados:** Cada solicitud registra su estado (pendiente, en proceso, respondida) y queda enlazada a la OTi.
+**5.** **Notificación multicanal:** Al enviar la solicitud, se notifica al almacenista por correo, WhatsApp y alerta visual en la campanita.
+**6.** **Regla de negocio:** Las solicitudes de cotización solo se desencadenan **Cuando** el trabajo es realizado por personal técnico interno; si el trabajo lo realiza un tercero, el sistema bloquea la solicitud.
+**7.** **Ítems fuera de oferta:** Los repuestos fuera de la oferta económica o del contrato se resaltan en amarillo para su cotización o adición a la OTe.
+**8.** **Alimentación de la propuesta comercial:** La cotización registrada alimenta la propuesta comercial/cotización que se envía a la entidad.
 
 ### Criterios UX / Usabilidad
 
-1. **Mínimo de clics (≤ 2 clics):** seleccionar los repuestos precargados y enviar; la solicitud se genera sin reescribir datos.
-2. **Autocompletado:** entidad, placa y repuestos se precargan desde la OTi y el diagnóstico.
-3. **Confirmación en tiempo real:** el envío y el cambio de estado se confirman sin recargar la pantalla.
+**1.** **Mínimo de clics (≤ 2 clics):** seleccionar los repuestos precargados y enviar; la solicitud se genera sin reescribir datos.
+**2.** **Autocompletado:** entidad, placa y repuestos se precargan desde la OTi y el diagnóstico.
+**3.** **Confirmación en tiempo real:** el envío y el cambio de estado se confirman sin recargar la pantalla.
 
 ### Criterios de Aceptación
 
 **Escenario 1: Crear la solicitud con datos precargados (caso feliz)**
 
-Dado que existe una OTi con diagnóstico y repuestos a cotizar
-Cuando el Coordinador abre el formulario de solicitud de cotización
-Entonces el sistema precarga automáticamente la entidad, la placa y los repuestos a cotizar.
+**Dado que** existe una OTi con diagnóstico y repuestos a cotizar
+**Cuando** el Coordinador abre el formulario de solicitud de cotización
+**Entonces** el sistema precarga automáticamente la entidad, la placa y los repuestos a cotizar.
 
 **Escenario 2: Enviar la solicitud al almacenista (caso feliz)**
 
-Dado que el Coordinador seleccionó los repuestos a cotizar
-Cuando envía la solicitud
-Entonces el sistema notifica al almacenista por correo, WhatsApp y alerta visual, y registra la solicitud en estado pendiente.
+**Dado que** el Coordinador seleccionó los repuestos a cotizar
+**Cuando** envía la solicitud
+**Entonces** el sistema notifica al almacenista por correo, WhatsApp y alerta visual, y registra la solicitud en estado pendiente.
 
 **Escenario 3: Consultar el estado de la solicitud (caso feliz)**
 
-Dado que existe una solicitud de cotización enviada
-Cuando el Coordinador consulta su estado
-Entonces el sistema muestra el estado actual: pendiente, en proceso o respondida.
+**Dado que** existe una solicitud de cotización enviada
+**Cuando** el Coordinador consulta su estado
+**Entonces** el sistema muestra el estado actual: pendiente, en proceso o respondida.
 
 **Escenario 4: Registrar la respuesta de cotización (caso feliz)**
 
-Dado que el almacenista respondió la solicitud
-Cuando el Coordinador registra la cotización recibida
-Entonces la solicitud pasa a estado respondida y queda enlazada a la OTi.
+**Dado que** el almacenista respondió la solicitud
+**Cuando** el Coordinador registra la cotización recibida
+**Entonces** la solicitud pasa a estado respondida y queda enlazada a la OTi.
 
 **Escenario 5: Bloqueo para trabajo realizado por terceros (excepción)**
 
-Dado que el trabajo es realizado por un tercero (no por personal técnico interno)
-Cuando el Coordinador intenta solicitar la cotización
-Entonces el sistema bloquea la solicitud, porque solo aplica para trabajo de personal técnico interno.
+**Dado que** el trabajo es realizado por un tercero (no por personal técnico interno)
+**Cuando** el Coordinador intenta solicitar la cotización
+**Entonces** el sistema bloquea la solicitud, porque solo aplica para trabajo de personal técnico interno.
 
 **Escenario 6: Solicitud sin repuestos (excepción)**
 
-Dado que no se seleccionó ningún repuesto a cotizar
-Cuando el Coordinador intenta enviar la solicitud
-Entonces el sistema bloquea el envío y exige seleccionar al menos un repuesto.
+**Dado que** no se seleccionó ningún repuesto a cotizar
+**Cuando** el Coordinador intenta enviar la solicitud
+**Entonces** el sistema bloquea el envío y exige seleccionar al menos un repuesto.
 
 **Escenario 7: Ítems fuera de oferta resaltados (excepción)**
 
-Dado que la OTi contiene repuestos fuera de la oferta económica o del contrato
-Cuando el Coordinador abre el formulario de cotización
-Entonces el sistema resalta dichos ítems en amarillo para su cotización o adición a la OTe.
+**Dado que** la OTi contiene repuestos fuera de la oferta económica o del contrato
+**Cuando** el Coordinador abre el formulario de cotización
+**Entonces** el sistema resalta dichos ítems en amarillo para su cotización o adición a la OTe.
 
 **Escenario 8: Alimentar la propuesta comercial (caso feliz)**
 
-Dado que la cotización fue registrada y la OTi está en estado "Aprobada para diagnóstico (pendiente de OTe)"
-Cuando el Coordinador prepara la propuesta para la entidad
-Entonces el sistema alimenta la propuesta comercial con los repuestos y cantidades cotizados.
+**Dado que** la cotización fue registrada y la OTi está en estado "Aprobada para diagnóstico (pendiente de OTe)"
+**Cuando** el Coordinador prepara la propuesta para la entidad
+**Entonces** el sistema alimenta la propuesta comercial con los repuestos y cantidades cotizados.
 
 ### Matriz Delta de Cambios
 
