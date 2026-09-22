@@ -109,7 +109,7 @@ Centralizar la Oferta Económica en una solución digital tipo formulario con co
 
 ### Criterios UX / Usabilidad
 
-**1.** **Mínimo de clics (0 clics):** escribir y filtrar automáticamente, sin botones de búsqueda.
+**1.** **Navegación simplificada:** escribir y filtrar automáticamente, sin botones de búsqueda.
 **2.** **Autocompletado:** sugerencias de procedimientos a medida que se escribe.
 **3.** **Confirmación en tiempo real:** el filtrado se ejecuta de forma asíncrona.
 
