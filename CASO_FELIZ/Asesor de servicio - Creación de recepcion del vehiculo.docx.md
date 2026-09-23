@@ -8,7 +8,7 @@
 | HU_002 |  | Diligenciamiento de Formatos e Inventario por Entidad |  |  |  |  |  |  |  |  |  |
 | HU_003 |  | Firmas Digitales en Formularios |  |  |  |  |  |  |  |  |  |
 | **Rol(es) "Yo como"** |  | Asesor de servicio |  |  |  |  |  |  |  |  |  |
-| **Funcionalidad "Quiero"** |  | ealizar la creación de recepciones de los vehículos, realizando un diligenciamiento inicial del documento de recepción, posteriormente que la nueva recepción sea notificada al área administrativa  |  |  |  |  |  |  |  |  |  |
+| **Funcionalidad "Quiero"** |  |realizar la creación de recepciones de los vehículos, realizando un diligenciamiento inicial del documento de recepción, posteriormente que la nueva recepción sea notificada al área administrativa  |  |  |  |  |  |  |  |  |  |
 | **Prioridad** |  | Alta | x | Media |  |  | Baja |  |  | **Módulo / Aplicación** | servicio |
 |  |  |  |  |  |  |  |  |  |  |  |  |
 | **Versión** | **Fecha** | **Autor** |  |  | **Usuario solicitante** |  |  | **Descripción** |  |  |  |
